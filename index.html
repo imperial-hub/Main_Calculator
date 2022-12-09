@@ -3,21 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subtraction</title>
 </head>
+
 <body>
     <script src="script.js"></script>
-    <form>
-        <input type="number" id="num1" step="1" placeholder="first number" pattern="^[-/d]/d*$">
-        </label>
-        <input type="number" id="num2" step="1" placeholder="Second number" pattern="^[-/d]/d*$">
-        </label><br>
-        <button type="button" onclick="sub()">Subtract</button>
-        <input id="ans" placeholder="0">
-    </form>
-    <textarea id="history" placeholder="0"></textarea>
+    <div class="operation">
+        <!-- <form> -->
+            <input type="number" class="input" id="num1" step="1" placeholder="first number" pattern="^[-/d]/d*$">
+            <input type="number" class="input" id="num2" step="1" placeholder="Second number" pattern="^[-/d]/d*$">
+            <button type="button" class="input"onclick="sub()">Subtract</button>
+            <input class="input" id="ans" placeholder="0">
+        <!-- </form> -->
+
+    </div>
+    <div class="history">
+        <textarea id="history" placeholder="0"></textarea>
+    </div>
 </body>
 
 </html>
