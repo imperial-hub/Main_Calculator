@@ -12,16 +12,16 @@
 <body>
     <script src="script.js"></script>
     <div class="operation">
-        <!-- <form> -->
-            <input type="number" class="input" id="num1" step="1" placeholder="first number" pattern="^[-/d]/d*$">
+        <form>
+            <input type="number" class="input" id="num1" placeholder="first number">
             <input type="number" class="input" id="num2" step="1" placeholder="Second number" pattern="^[-/d]/d*$">
-            <button type="button" class="input"onclick="sub()">Subtract</button>
-            <input class="input" id="ans" placeholder="0">
-        <!-- </form> -->
-
+            <button type="button" class="input" onclick="sub()">SUBTRACT</button>
+        </form>
     </div>
     <div class="history">
-        <textarea id="history" placeholder="0"></textarea>
+        <input class="input" id="ans" placeholder="">
+        <textarea id="history" placeholder=""></textarea><br>
+        <button type="button"  id="clear" onclick="clean()">CLEAR</button>
     </div>
 </body>
 
