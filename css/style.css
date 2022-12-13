@@ -20,27 +20,27 @@ body {
 
 form {
     text-align: inherit;
-    margin-top: 10vh;
+    margin-top: 20vh;
     display: flex;
     flex-direction: column;
 }
-
+#sub{
+    background-color: orange;
+    font-weight: bold;
+}
 button {
-    transition: 1000ms;
-    background-color: rgb(255, 166, 0);
     border-radius: 2vw;
     width: 25vw;
     height: 7vh;
 }
-
-button:hover {
-    transition: 1000ms;
-    width: 26vw;
-    height: 8vh;
+#clear{
+    background-color: #131111;
+    color: white;
+    font-weight: bold;
 }
 
 .input {
-    border: 2px double rgb(22, 20, 20);
+    border: 2px double #131111;
     border-radius: 2vw;
     width: 25vw;
     height: 7vh;
@@ -48,6 +48,8 @@ button:hover {
 }
 
 #ans.input {
+    background-color: #131111;
+    color: white;
     margin: 5vh 0 5vh 0vw;
     text-align: center;
 }
@@ -64,23 +66,62 @@ textarea {
 }
 
 .history {
-
     height: 100vh;
     width: 50vw;
-    background-color: rgb(19, 17, 17);
+    background-color: orange;
 }
 
 #history {
     height: 60vh;
     width: 30vw;
     /* transform: translate(10vw,0vh); */
-    border: 1px solid black;
+    border: 1px solid #131111;
     border-radius: 2vw;
     text-align: center;
 }
 
-/* #clear{
-    height: 5vh;
-    width: 10vw;
-    transform: translate(0vw,10vh);
-} */
+@media only screen and (max-width: 400px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    form{
+        margin-top:5vh ;
+    }
+    body {
+        flex-direction: column;
+    }
+    .operation {
+        height: 35vh;
+        width: 100vw;
+    }
+    #num2{
+        position: absolute;
+        transform: translate(43vw,0vh);
+    }
+    ::placeholder{
+        font-size: 2vh;
+    }
+    .input{
+        width: 40vw;
+    }
+    #sub{
+        transform: translate(20vw,-5vh);
+    }
+    .history {
+        /* flex-direction: row; */
+        height: 65vh;
+        width: 100vw;
+        background-color: orange;
+    }
+    #history {
+        height: 30vh;
+        width: 60vw;
+        border: 1px solid black;
+        border-radius: 2vw;
+        text-align: center;
+    }
+    #ans.input {
+        margin: 3vh 0 10vh 0;
+    }
+}

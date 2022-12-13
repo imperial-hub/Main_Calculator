@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subtraction</title>
@@ -15,13 +15,14 @@
         <form>
             <input type="number" class="input" id="num1" placeholder="first number">
             <input type="number" class="input" id="num2" step="1" placeholder="Second number" pattern="^[-/d]/d*$">
-            <button type="button" class="input" onclick="sub()">SUBTRACT</button>
+            <button type="button" id="sub" class="input" onclick="subt()">SUBTRACT</button>
         </form>
     </div>
     <div class="history">
-        <input class="input" id="ans" placeholder="">
-        <textarea id="history" placeholder=""></textarea><br>
-        <button type="button"  id="clear" onclick="clean()">CLEAR</button>
+        <input class="input" id="ans" placeholder="answer">
+        <br>
+            <textarea id="history" placeholder="history"></textarea><br>
+        <button type="button" id="clear" onclick="clean()">CLEAR</button>
     </div>
 </body>
 
