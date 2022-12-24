@@ -1,17 +1,14 @@
-function subt() {
-    var a = parseInt(document.getElementById("num1").value);
-    var b = parseInt(document.getElementById("num2").value);
-    if(!(a))
-    {
-        return;
-    }
-    document.getElementById("ans").value = a - b;
-    document.getElementById("history").value += a + " - " + b + " = " + (a - b) + "\n";
+function fun(){
+    document.getElementsByClassName()
 }
-function clean() {
-    document.getElementById("num1").value='';
-    document.getElementById("num2").value='';
-    document.getElementById("ans").value = '';
-    document.getElementById("history").value='';
-    return;
+function funclear(){}
+function funone(ch)
+{
+    if(ch==4)
+    {
+        document.getElementsByID("one").innerHTML=5;
+    }
+    else{
+        document.getElementsByID("one").innerHTML=6;
+    }
 }
