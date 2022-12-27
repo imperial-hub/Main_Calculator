@@ -5,42 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
     <title>Calculator</title>
 </head>
 <body>
     <div id="box">
+        <div id="output">
+            <input id="outputs">
+           <!-- <h1 id="outputs"></h1> -->
+        </div>
         <div>
-            <input id="output" type="number">
+            <button onclick="fun('7')" class="num" id="seven" type="button">7</button>
+            <button onclick="fun('8')" class="num" id="eight" type="button">8</button>
+            <button onclick="fun('9')" class="num" id="nine" type="button">9</button>
+            <button onclick="fun('/')" class="num" id="div" type="button">/</button>
+        </div>
+        <div>
+            <button onclick="fun('4')" class="num" id="four" type="button">4</button>
+            <button onclick="fun('5')" class="num" id="five" type="button">5</button>
+            <button onclick="fun('6')" class="num" id="six" type="button">6</button>
+            <button onclick="fun('-')" class="num" id="sub" type="button">-</button>
+        </div>
+        <div>
+            <button onclick="fun('1')" class="num" id="one" type="button">1</button>
+            <button onclick="fun('2')" class="num" id="two" type="button">2</button>
+            <button onclick="fun('3')" class="num" id="three" type="button">3</button>
+            <button onclick="fun('+')" class="num" id="plus" type="button">+</button>
         </div>
         <div>
             <button onclick="funclear()" class="num" id="clear" type="button">C</button>
-            <button onclick="funperc()" class="num" id="perce" type="button">%</button>
-            <button onclick="fundiv()" class="num" id="div" type="button">/</button>
-            <button onclick="funback()" class="num" id="back" type="button">←</button>
-        </div>
-        <div>
-            <button onclick="funseven()" class="num" id="seven" type="button">7</button>
-            <button onclick="funeight()" class="num" id="eight" type="button">8</button>
-            <button onclick="funnine()" class="num" id="nine" type="button">9</button>
-            <button onclick="funmulti()" class="num" id="multi" type="button">X</button>
-        </div>
-        <div>
-            <button onclick="funfour()" class="num" id="four" type="button">4</button>
-            <button onclick="funfive()" class="num" id="five" type="button">5</button>
-            <button onclick="funsix()" class="num" id="six" type="button">6</button>
-            <button onclick="funsub()" class="num" id="sub" type="button">-</button>
-        </div>
-        <div>
-            <button onclick="funone(document.getElementById(this))" class="num" id="one" type="button">1</button>
-            <button onclick="funtwo()" class="num" id="two" type="button">2</button>
-            <button onclick="funthree()" class="num" id="three" type="button">3</button>
-            <button onclick="funplus()" class="num" id="plus" type="button">+</button>
-        </div>
-        <div>
-            <button onclick="" class="num" id="zero" type="button">0</button>
-            <button onclick="" class="num" id="dot" type="button">.</button>
-            <button onclick="" class="num" id="equal" type="button">=</button>
+            <button onclick="fun('0')" class="num" id="zero" type="button">0</button>
+            <button onclick="fun('*')" class="num" id="multi" type="button">X</button>
+            <button onclick="funeq('=')" class="num" id="equal" type="button">=</button>
         </div>
     </div>
 </body>

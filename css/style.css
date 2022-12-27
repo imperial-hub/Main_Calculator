@@ -1,26 +1,65 @@
 body{
     background-color: rgb(0, 0, 0);
 }
+
 input{
-    background-color: rgb(27, 26, 26);
-    border: none;
+    margin: 20px;
+    padding-top: 10px;
+    width: 300px;
+    height: 25px;
+    position:relative;
+    background-color: #1e1e1e;
     color: white;
-    width: 24vw;
-    height: 10vh;
+    border: none;
+    border-radius: 10px;
+
+}
+input:focus{
+    outline: none;
+}
+#output{
+    height: 75px;
+    width: 340px;
+    border-radius: 20px;
+    background-color: #1e1e1e;
 }
 #box{
+    background-color: white;
+    border-radius: 50px;
     padding: 5vh;
-    transform: translate(30vw,10vh);
-    width: 25vw;
+    transform: translate(35vw,10vh);
+    width: 350px;
 }
 .num{
     margin: 5px;
     font-size: 60px;
-    background-color: rgb(27, 26, 26);
-    border-radius: 90px;
+    background-color: #1e1e1e;
+    border-radius: 30px;
     width: 70px;
     color: white;
 }
-#zero.num{
-    width: 155px;
+.num:active{
+    color: black;
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: white;
+    }
+    #box{
+        transform: translate(0vw,20vh);
+        background-color: white;
+        border-radius: 0px;
+
+        height: 40vh;
+        width:100vw;
+    }
+    inout{
+
+    }
 }
