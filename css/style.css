@@ -12,7 +12,7 @@ input{
     color: white;
     border: none;
     border-radius: 10px;
-
+    font-size: 30px;
 }
 input:focus{
     outline: none;
